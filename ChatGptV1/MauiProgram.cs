@@ -34,11 +34,6 @@ namespace ChatGptV1
                 handler.PlatformView.SetBackgroundColor(Android.Graphics.Color.Transparent);
                 handler.PlatformView.BackgroundTintList = Android.Content.Res.ColorStateList.ValueOf(Android.Graphics.Color.Transparent);
 
-#elif IOS
-                handler.PlatformView.BackgroundColor = UIKit.UIColor.Clear;
-                handler.PlatformView.Layer.BorderWidth = 0;
-                handler.PlatformView.BorderStyle = UIKit.UITextBorderStyle.None;
-#endif
             });
 #if DEBUG
             builder.Logging.AddDebug();
